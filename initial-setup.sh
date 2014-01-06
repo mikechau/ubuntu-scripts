@@ -27,6 +27,8 @@ sudo apt-get install libmysqlclient-dev
 sudo apt-get install libpq-dev
 
 # INSTALL NODEJS
+# sudo apt-get install python-software-properties # <= 12.04
+sudo apt-get install software-proprieties-common # >= 12.10
 sudo add-apt-repository ppa:chris-lea/node.js
 sudo apt-get update
 sudo apt-get install nodejs
