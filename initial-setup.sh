@@ -11,10 +11,10 @@ sudo apt-get install curl
 curl -L get.rvm.io | bash -s stable --auto
 . ~/.bash_profile
 rvm requirements
-rvm install 2.0.0
-rvm --default use 2.0.0
+rvm install 2.1.0
+rvm --default use 2.1.0
 rvm gemset create Rails3.2
-rvm use 2.0.0@Rails3.2 --default
+rvm use 2.1.0@Rails3.2 --default
 
 # ADDITIONAL PACKAGES
 sudo apt-get install build-essential openssl libreadline6 libreadline6-dev \
@@ -34,10 +34,15 @@ sudo npm install grunt-cli -g
 
 # INSTALL RAILS
 echo 'gem: --no-ri --no-rdoc' > ~/.gemrc
-gem install rails -v 3.2.14
+gem install rails -v 3.2.16
 
 # INSTALL FAIL2BAN
 sudo apt-get install fail2ban
+
+# INSTALL UPDATED VIM & TMUX
+sudo add-apt-repository ppa:pi-rho/dev
+sudo apt-get update
+sudo apt-get install tmux vim
 
 # INSTALL NGINX
 # to be continued...
